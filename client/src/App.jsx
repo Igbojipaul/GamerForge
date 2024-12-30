@@ -25,10 +25,10 @@ import AdminProductsV from "./pages/admin-v/AdminProductsV";
 import AdminUsersV from "./pages/admin-v/AdminUsersV";
 import Settings from "./pages/admin-v/Settings";
 import ShoppingHome from "./pages/shopping-v/ShoppingHome";
-import AccountPage from "./pages/shopping-v/accountPage";
-import PayPalReturn from "./pages/shopping-v/paypal-return";
+import AccountPage from "./pages/shopping-v/AccountPage";
+import PayPalReturn from "./pages/shopping-v/Paypal-return";
 import Search from "./pages/shopping-v/Search";
-import WishlistPage from "./pages/shopping-v/wishList";
+import WishlistPage from "./pages/shopping-v/WishList";
 
 const App = () => {
   const isAuthenticated = useSelector(selectAuthenticated);
