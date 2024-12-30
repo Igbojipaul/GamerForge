@@ -1,6 +1,6 @@
 import React from 'react'
 
-const unAuth = () => {
+const UnAuth = () => {
   return (
     <div>
       <h3>You do not have access to this page</h3>
@@ -8,4 +8,4 @@ const unAuth = () => {
   )
 }
 
-export default unAuth
+export default UnAuth

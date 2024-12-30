@@ -9,7 +9,7 @@ import ShoppingVlayout from "./components/shoppingV/ShoppingVlayout";
 import ShoppingProductV from "./pages/shopping-v/ShoppingProductV";
 import ShoppingCheckoutV from "./pages/shopping-v/ShoppingCheckoutV";
 import Errorpage from "./pages/Errorpage";
-import UnAuth from "./pages/UnAuth";
+import UnAuth from "./pages/unAuth";
 import CheckAuth from "./components/custom/CheckAuth";
 import { useDispatch, useSelector } from "react-redux";
 import {
