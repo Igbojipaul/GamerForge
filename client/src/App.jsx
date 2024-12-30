@@ -24,7 +24,7 @@ import AdminUsersV from "./pages/admin-v/AdminUsersV";
 import Settings from "./pages/admin-v/Settings";
 import ShoppingHome from "./pages/shopping-v/ShoppingHome";
 import AccountPage from "./pages/shopping-v/AccountPage";
-import PayPalReturn from "./pages/shopping-v/Paypal-return";
+import PayPalReturn from "./pages/shopping-v/paypal-return";
 import Search from "./pages/shopping-v/Search";
 import WishlistPage from "./pages/shopping-v/WishList";
 
