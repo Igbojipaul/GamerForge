@@ -6,12 +6,12 @@ import AdminLayout from "./components/Admin/AdminLayout";
 import AdminDashboardV from "./pages/admin-v/AdminDashboardV";
 import AdminAboutV from "./pages/admin-v/AdminProductsV";
 import AdminOrderV from "./pages/admin-v/AdminOrderV";
-import ShoppingVlayout from "./components/shoppingV/shoppingVlayout";
+import ShoppingVlayout from "./components/ShoppingV/shoppingVlayout";
 import ShoppingProductV from "./pages/shopping-v/ShoppingProductV";
 import ShoppingOrdersV from "./pages/shopping-v/ShoppingHome";
 import ShoppingCheckoutV from "./pages/shopping-v/ShoppingCheckoutV";
 import Errorpage from "./pages/Errorpage";
-import UnAuth from "./pages/unAuth";
+import UnAuth from "./pages/UnAuth";
 import CheckAuth from "./components/custom/CheckAuth";
 import { useDispatch, useSelector } from "react-redux";
 import {
