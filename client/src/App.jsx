@@ -6,7 +6,7 @@ import AdminLayout from "./components/Admin/AdminLayout";
 import AdminDashboardV from "./pages/admin-v/AdminDashboardV";
 import AdminAboutV from "./pages/admin-v/AdminProductsV";
 import AdminOrderV from "./pages/admin-v/AdminOrderV";
-import ShoppingVlayout from "./components/ShoppingV/shoppingVlayout";
+import ShoppingVlayout from "./components/ShoppingV/ShoppingVlayout";
 import ShoppingProductV from "./pages/shopping-v/ShoppingProductV";
 import ShoppingOrdersV from "./pages/shopping-v/ShoppingHome";
 import ShoppingCheckoutV from "./pages/shopping-v/ShoppingCheckoutV";
