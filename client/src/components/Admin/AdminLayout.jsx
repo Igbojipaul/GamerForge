@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import NavigationSideBar from "./navigationSideBar";
+import NavigationSideBar from "./NavigationSideBar";
 import Header from "./Header";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 
