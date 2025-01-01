@@ -27,6 +27,7 @@ import AccountPage from "./pages/shopping-v/AccountPage";
 import PayPalReturn from "./pages/shopping-v/paypal-return";
 import Search from "./pages/shopping-v/Search";
 import WishlistPage from "./pages/shopping-v/wishList";
+import LandingPage from "./pages/shopping-v/LandingPage";
 
 const App = () => {
   const isAuthenticated = useSelector(selectAuthenticated);
@@ -44,6 +45,8 @@ const App = () => {
   return (
     <div className="flex flex-col overflow-hidden bg-[#ffffff] flex-column ">
       <Routes>
+        <Route path="/" element={<LandingPage />} />
+
         <Route
           path="/auth"
           element={
