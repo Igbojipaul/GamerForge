@@ -2,7 +2,7 @@ const express = require("express")
 
 const router = express.Router()
 
-const {saveItem, getSavedItems, deleteSavedItem} = require("../../controllers/shopRoutes/savedItemsCOntroller")
+const {saveItem, getSavedItems, deleteSavedItem} = require("../../controllers/shopRoutes/savedItemsController")
 
 const {authenticate} = require('../../controllers/authentication/userController')
 
