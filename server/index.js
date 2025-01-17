@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require('cookie-parser')
-// const dotenv = require('dotenv');
+const dotenv = require('dotenv');
 const morgan = require("morgan");
 
 // custom modules
@@ -15,14 +15,16 @@ const orderRoutes = require("./routes/shopRoutes/orderRoutes")
 const searchRoutes = require("./routes/shopRoutes/searchRoutes")
 const savedItemsRoutes = require("./routes/shopRoutes/savedItemsRoutes")
 
-// dotenv.config();
+dotenv.config();
 const app = express();
 
 // Middleware
 
 // in production, please dont forget to specify the origin to allow only the specified front end origin to make requests and also, specify the request methods, allowHeaders, credentials... as the case maybe...
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['https://gamerforgerj.netlify.app/'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
 app.use(express.json());
