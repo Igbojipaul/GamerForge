@@ -51,6 +51,8 @@ dbConnection()
 
 // start 
 app.listen(PORT, () => {
-      console.log(`server is running on port ${PORT}...`);
-})
+  console.log(`🚀 Server is running on port ${PORT}...`);
+  console.log(`✅ Build complete! Render should mark it as successful.`);
+});
+
 
