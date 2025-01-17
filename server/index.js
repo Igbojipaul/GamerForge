@@ -22,9 +22,7 @@ const app = express();
 
 // in production, please dont forget to specify the origin to allow only the specified front end origin to make requests and also, specify the request methods, allowHeaders, credentials... as the case maybe...
 app.use(cors({
-  origin: ['https://gamerforgerj.netlify.app/'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: ['https://gamerforgerj.netlify.app', 'http://localhost:5173'],
   credentials: true
 }));
 app.use(express.json());
@@ -51,8 +49,6 @@ dbConnection()
 
 // start 
 app.listen(PORT, () => {
-  console.log(`🚀 Server is running on port ${PORT}...`);
-  console.log(`✅ Build complete! Render should mark it as successful.`);
-});
-
+      console.log(`server is running on port ${PORT}...`);
+})
 
