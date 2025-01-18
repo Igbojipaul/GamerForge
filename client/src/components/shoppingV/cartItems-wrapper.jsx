@@ -38,7 +38,7 @@ function CartItemsWrapper({ cartItems, setSheet }) {
 
       <div className="mt-8 flex justify-between items-center font-bold text-xl border-t border-purple-700 pt-4">
         <span>Total</span>
-        <span>${totalCost.toFixed(2)}</span>
+        <span>${totalCost?.toFixed(2)}</span>
       </div>
 
       <Button
