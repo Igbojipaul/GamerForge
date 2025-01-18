@@ -66,7 +66,8 @@ const ImageUpload = ({
 
     try {
       const result = await axios.post(
-        "http://localhost:5000/api/admin/products/upload",
+        
+        "https://gamerforge.onrender.com/api/admin/products/upload",
         data,
         {
           headers: {

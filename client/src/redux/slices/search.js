@@ -6,7 +6,7 @@ export const getSearchedProducts = createAsyncThunk(
   async (keyword) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/shop/search/${keyword}`
+        `https://gamerforge.onrender.com/api/shop/search/${keyword}`
       );
       return response.data;
     } catch (error) {

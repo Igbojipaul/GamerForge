@@ -6,7 +6,7 @@ export const signupUser = createAsyncThunk(
   async ({ name, email, password }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://gamerforge.onrender.com/api/auth/signup",
         { name, email, password },
         { withCredentials: true }
       );
@@ -18,13 +18,14 @@ export const signupUser = createAsyncThunk(
       );
     }
   }
+  
 );
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async ({ email, password }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://gamerforge.onrender.com/api/auth/login",
         { email, password },
         { withCredentials: true }
       );
@@ -41,7 +42,7 @@ export const loginUser = createAsyncThunk(
 export const keepUser = createAsyncThunk("auth/keepUser", async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/auth/keepUser",
+      "https://gamerforge.onrender.com/api/auth/keepUser",
       { withCredentials: true }
     );
     return response.data;
@@ -53,7 +54,7 @@ export const keepUser = createAsyncThunk("auth/keepUser", async () => {
 export const logoutUser = createAsyncThunk("auth/logoutUser", async () => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/logout",
+      "https://gamerforge.onrender.com/api/auth/logout",
       {},
       {
         withCredentials: true,

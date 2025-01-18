@@ -5,7 +5,8 @@ import axios from "axios";
 export const fetchAddresses = createAsyncThunk("address/fetch", async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/shop/address/get-addresses",
+      
+      "https://gamerforge.onrender.com/api/shop/address/get-addresses",
       { withCredentials: true }
     );
     return response.data;
@@ -16,7 +17,7 @@ export const fetchAddresses = createAsyncThunk("address/fetch", async () => {
 export const addAddress = createAsyncThunk("address/add", async (formData) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/shop/address/add-address",
+      "https://gamerforge.onrender.com/api/shop/address/add-address",
       formData,
       { withCredentials: true }
     );
@@ -30,7 +31,7 @@ export const updateAddress = createAsyncThunk(
   async ( {formData, id} ) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/shop/address/update-address/${id}`,
+        `https://gamerforge.onrender.com/api/shop/address/update-address/${id}`,
         formData,
         {withCredentials: true}
 
@@ -46,7 +47,7 @@ export const deleteAddress = createAsyncThunk(
   async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/shop/address/delete-address/${id}`,     {withCredentials: true}
+        `https://gamerforge.onrender.com/api/shop/address/delete-address/${id}`,     {withCredentials: true}
 
       );
       return response.data;

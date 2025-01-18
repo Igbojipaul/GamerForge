@@ -19,7 +19,7 @@ export const fetchFilteredProducts = createAsyncThunk(
       
 
       const response = await axios.get(
-        `http://localhost:5000/api/shop/products/fetch?${query}`,
+        `https://gamerforge.onrender.com/api/shop/products/fetch?${query}`,
         { withCredentials: true }
       );
       return response.data;
@@ -35,7 +35,7 @@ export const fetchProductDetails = createAsyncThunk(
       
 
       const response = await axios.get(
-        `http://localhost:5000/api/shop/products/fetch/${id}`,
+        `https://gamerforge.onrender.com/api/shop/products/fetch/${id}`,
         { withCredentials: true }
       );
       return response.data;

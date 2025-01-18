@@ -4,7 +4,7 @@ import axios from "axios";
 export const addProduct = createAsyncThunk("product/add", async (formData, {rejectWithValue}) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/admin/products/add",
+      "https://gamerforge.onrender.com/api/admin/products/add",
       formData,
       { withCredentials: true }
     );
@@ -19,7 +19,7 @@ export const addProduct = createAsyncThunk("product/add", async (formData, {reje
 export const fetchAllProducts = createAsyncThunk("product/fetch", async ( ) => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/admin/products/fetch",
+      "https://gamerforge.onrender.com/api/admin/products/fetch",
       { withCredentials: true }
     );    
     return response.data;
@@ -34,7 +34,7 @@ export const updateProduct = createAsyncThunk("product/update", async ({id, form
   
   try {
     const response = await axios.put(
-      `http://localhost:5000/api/admin/products/update/${id}`,
+      `https://gamerforge.onrender.com/api/admin/products/update/${id}`,
       formData,
       { withCredentials: true }
     );
@@ -49,7 +49,7 @@ export const deleteProduct = createAsyncThunk("products/delete", async(id)=>{
 
   try {
     const response = await axios.delete(
-      `http://localhost:5000/api/admin/products/delete/${id}`,
+      `https://gamerforge.onrender.com/api/admin/products/delete/${id}`,
       { withCredentials: true }
     );
     return response.data;

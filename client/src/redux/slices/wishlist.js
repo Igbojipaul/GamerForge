@@ -7,7 +7,7 @@ export const saveItem = createAsyncThunk(
   async (productId) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/shop/wishlist/add`,
+        `https://gamerforge.onrender.com/api/shop/wishlist/add`,
         { productId },
         { withCredentials: true }
       );
@@ -22,7 +22,7 @@ export const fetchSavedItems = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/shop/wishlist/get`,
+        `https://gamerforge.onrender.com/api/shop/wishlist/get`,
         { withCredentials: true }
       );
       return response.data;
@@ -37,7 +37,7 @@ export const deleteSavedItem = createAsyncThunk(
   async (productId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/shop/wishlist/delete/${productId}`,
+        `https://gamerforge.onrender.com/api/shop/wishlist/delete/${productId}`,
         { withCredentials: true }
       );
       return response.data;
@@ -62,7 +62,7 @@ const wishlistSlice = createSlice({
     });
     builder.addCase(saveItem.fulfilled, (state, action) => {
       state.loading = false;
-      state.savedItems = action.payload?.products;
+      state.savedItems = action.payload.products;
     });
     builder.addCase(saveItem.rejected, (state) => {
       state.loading = false;
@@ -84,7 +84,7 @@ const wishlistSlice = createSlice({
     });
     builder.addCase(deleteSavedItem.fulfilled, (state, action) => {
       state.loading = false;
-      state.savedItems = action.payload?.products;
+      state.savedItems = action.payload.products;
     });
     builder.addCase(deleteSavedItem.rejected, (state, action) => {
       state.loading = false;

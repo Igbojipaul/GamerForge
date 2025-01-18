@@ -6,7 +6,7 @@ export const initiatePayment = createAsyncThunk(
   async (orderData) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/shop/order/initiatePayment",
+        "https://gamerforge.onrender.com/api/shop/order/initiatePayment",
         orderData,
         { withCredentials: true }
       );

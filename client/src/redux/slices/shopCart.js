@@ -7,7 +7,7 @@ export const addToCart = createAsyncThunk(
   async ({ productId, quantity }) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/shop/cart/add`,
+        `https://gamerforge.onrender.com/api/shop/cart/add`,
         { productId, quantity },
         { withCredentials: true }
       );
@@ -22,7 +22,7 @@ export const fetchCartItems = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/shop/cart/get`,
+        `https://gamerforge.onrender.com/api/shop/cart/get`,
         { withCredentials: true }
       );
       return response.data;
@@ -37,7 +37,7 @@ export const updateCartItem = createAsyncThunk(
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/shop/cart/update`,
+        `https://gamerforge.onrender.com/api/shop/cart/update`,
         { productId, quantity },
         { withCredentials: true }
       );
@@ -52,7 +52,7 @@ export const deleteCartItem = createAsyncThunk(
   async ( productId ) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/shop/cart/delete/${productId}`,
+        `https://gamerforge.onrender.com/api/shop/cart/delete/${productId}`,
         { withCredentials: true }
       );
       return response.data;
