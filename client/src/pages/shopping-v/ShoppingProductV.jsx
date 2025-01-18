@@ -157,7 +157,7 @@ const ShoppingProductV = () => {
   };
 
   function checkIsSaved(id) {
-    const item = savedItems.find((item) => item.productId._id === id);
+    const item = savedItems?.find((item) => item.productId._id === id);
 
     if (item) {
       return true;

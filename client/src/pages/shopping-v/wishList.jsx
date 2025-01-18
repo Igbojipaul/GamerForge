@@ -82,7 +82,7 @@ const WishlistPage = () => {
           handleAddtoCart={handleAddtoCart}
         />
 
-        {savedItems.length > 0 ? (
+        {savedItems?.length > 0 ? (
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {savedItems.map((item) => (
               <motion.div
